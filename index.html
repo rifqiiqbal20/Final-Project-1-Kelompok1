@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotelku.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+      defer
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/dfabc0038b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+  
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="brand" href="#">
+          <img
+            src="source/logo.png"
+            alt="Logo Hotelku."
+            width="100"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-text">
+            <li>
+              <a
+                class="nav-link active"
+                id="home"
+                aria-current="page"
+                href="index.html"
+                style="background: #4fbbff"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href=""
+                >PORTOFOLIO</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="">BLOG</a>
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href=""
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href=""
+                >CONTACT</a
+              >
+            </li>
+            <li>
+              <a class="nav-link active" aria-current="page" href="Todos.html">TODOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <Marquee>
+      <h3>We Believe In Quality Hotel</h3>
+    </Marquee>
+    <!-- slider -->
+    
+      <div class="content-slidee">
+          <div class="imgslide fadee">
+              <div class="numberslidee">1 / 3</div>
+              <img class="gambar" src="source/home slide1.jpg" alt="">
+              <div class="text">KAMAR SUPERIOR</div>
+          </div>
+
+          <div class="imgslide fadee">
+              <div class="numberslidee">2 / 3</div>
+              <img class="gambar" src="source/home slide2.jpg" alt="">
+              <div class="text">KAMAR DELUXE</div>
+
+          </div>
+
+          <div class="imgslide fadee">
+              <div class="numberslidee">3 / 3</div>
+              <img class="gambar" src="source/home slide3.jpg" alt="">
+              <div class="text">KAMAR STANDART</div>
+
+          </div>
+
+          <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+          <a class="next" onClick="nextslide(1)">&#10095;</a> 
+      </div>
+      <div class="container">
+      <div class="pagee">
+          <span class="dot" onClick="dotslide(1)"></span>
+          <span class="dot" onClick="dotslide(2)"></span>
+          <span class="dot" onClick="dotslide(3)"></span>
+      </div>
+      </div>
+
+    <div class="slogan" id="slogan">
+      <div class="container">
+        <h1 class="text-center">DESERVE YOU BETTER IN HOTELKU</h1>
+        <h4 class="desc-slogan">
+          We Have Hotelku
+        </h4>
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="card">
+          <div class="col">
+            <div class="card h-100">
+              <img src="source/home slide1.jpg" class="card-img-top" alt="ICON1" />
+              <div class="card-body">
+                <h5 class="card-title text-info">Kamar Superior</h5>
+                <p class="desc text-white">
+                  Rp. 500.000/malam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="source/home slide2.jpg" class="card-img-top" alt="ICON2" />
+              <div class="card-body">
+                <h5 class="card-title text-info">Kamar Deluxe</h5>
+                <p class="desc text-white">
+                  nanti diisi ya
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="source/home slide3.jpg" class="card-img-top" alt="ICON3" />
+              <div class="card-body">
+                <h5 class="card-title text-info">Kamar Standart</h5>
+                <p class="desc text-white">
+                  nanti diisi ya
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="source/home slide4.jpg" class="card-img-top" alt="ICON3" />
+              <div class="card-body">
+                <h5 class="card-title text-info">Card Member</h5>
+                <p class="desc text-white">
+                  nanti diisi heys
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="container">
+      <h1 class="h1">GALLERY</h1>
+      <h2 class="h2">This our works</h2>
+      <div class="full-img" id="fullImgBox">
+        <img src="source/gallery1.jpg" alt="picture" id="fullImg" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="full-img" id="fullImgBox2">
+        <img src="source/gallery2.jpg" alt="picture" id="fullImg2" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="full-img" id="fullImgBox3">
+        <img src="source/gallery3.jpg" alt="picture" id="fullImg3" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="full-img" id="fullImgBox4">
+        <img src="source/gallery4.jpg" alt="picture" id="fullImg4" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="full-img" id="fullImgBox5">
+        <img src="source/gallery5.jpg" alt="picture" id="fullImg5" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="full-img" id="fullImgBox6">
+        <img src="source/gallery6.jpg" alt="picture" id="fullImg6" />
+        <span onclick="closeFullImg()">x</span>
+      </div>
+      <div class="img-gallery">
+        <img
+          src="source/gallery1.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="source/gallery2.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="source/gallery3.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="source/gallery4.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="source/gallery5.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+        <img
+          src="source/gallery6.jpg"
+          alt="picture"
+          onclick="openFullImg(this.src)"
+        />
+      </div>
+      <!-- <script>
+        const fullImgBox = document.getElementById("fullImgBox");
+        const fullImgBox2 = document.getElementById("fullImgBox2");
+        const fullImgBox3 = document.getElementById("fullImgBox3");
+        const fullImgBox4 = document.getElementById("fullImgBox4");
+        const fullImgBox5 = document.getElementById("fullImgBox5");
+        const fullImgBox6 = document.getElementById("fullImgBox6");
+        const fullImg = document.getElementById("fullImg");
+        const fullImg2 = document.getElementById("fullImg2");
+        const fullImg3 = document.getElementById("fullImg3");
+        const fullImg4 = document.getElementById("fullImg4");
+        const fullImg5 = document.getElementById("fullImg5");
+        const fullImg6 = document.getElementById("fullImg6");
+
+        function openFullImg(pic) {
+          fullImgBox.style.display = "flex";
+          fullImg.src = pic;
+          fullImgBox2.style.display = "flex";
+          fullImg2.src = pic;
+          fullImgBox3.style.display = "flex";
+          fullImg3.src = pic;
+          fullImgBox4.style.display = "flex";
+          fullImg4.src = pic;
+          fullImgBox5.style.display = "flex";
+          fullImg5.src = pic;
+          fullImgBox6.style.display = "flex";
+          fullImg6.src = pic;
+        }
+
+        function closeFullImg() {
+          fullImgBox.style.display = "none";
+          fullImgBox2.style.display = "none";
+          fullImgBox3.style.display = "none";
+          fullImgBox4.style.display = "none";
+          fullImgBox5.style.display = "none";
+          fullImgBox6.style.display = "none";
+        }
+      </script>
+    </div>
+
+    < clients-->
+    <div class="container">
+      <h1 class="h1">OUR CLIENTS</h1>
+      <h2 class="h2">This is our clients</h2>
+    </div>
+    <!-- slider clients -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide col-lg-2 offset-lg-5"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="source/c1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="source/c2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="source/c3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="source/c4.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="source/c5.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="source/c6.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="source/c7.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="source/c3.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="source/c5.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- footer nav bar -->
+    <div class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row align-items-start">
+            <div class="col" id="footer-col">
+              <h3 class="text-center">About</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                ducimus esse aut saepe, odit laborum ipsa fugit? Ipsa sapiente
+                quisquam facilis nostrum aliquam, veniam molestiae, debitis
+                pariatur quos ab necessitatibus.
+              </p>
+              <button class="btn btn-outline-primary">Learn more</button>
+              <h4 class="text-center">Photo Stream</h4>
+              <div class="photo">
+                <ul>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g1.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g2.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g3.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g4.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g5.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                  <li>
+                    <a class="popup" href="#"
+                      ><img src="source/g6.jpg" alt="Photo"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col" id="footer-col">
+              <h3 class="text-center">Lastest Tweets</h3>
+              <div class="footer-list">
+                <ul>
+                  <li>
+                    <i
+                      class="fa-brands fa-twitter fa-fade fa-lg"
+                      id="brands"
+                      style="
+                        --fa-animation-duration: 2s;
+                        --fa-fade-opacity: 0.6;
+                        color: #1da1f2;
+                      "
+                      ;
+                    ></i>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda quaerat molestias sint.
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i
+                      class="fa-brands fa-twitter fa-fade fa-lg"
+                      id="brands"
+                      style="
+                        --fa-animation-duration: 2s;
+                        --fa-fade-opacity: 0.6;
+                        color: #1da1f2;
+                      "
+                      ;
+                    ></i>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda quaerat molestias sint.
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i
+                      class="fa-brands fa-twitter fa-fade fa-lg"
+                      id="brands"
+                      style="
+                        --fa-animation-duration: 2s;
+                        --fa-fade-opacity: 0.6;
+                        color: #1da1f2;
+                      "
+                      ;
+                    ></i>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda quaerat molestias sint.
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i
+                      class="fa-brands fa-twitter fa-fade fa-lg"
+                      id="brands"
+                      style="
+                        --fa-animation-duration: 2s;
+                        --fa-fade-opacity: 0.6;
+                        color: #1da1f2;
+                      "
+                      ;
+                    ></i>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda quaerat molestias sint.
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="social-icons">
+                <h4 class="text-center">Social Connecting</h4>
+                <ul>
+                  <li><i class="fa-brands fa-square-facebook fa-2xl"></i></li>
+                  <li><i class="fa-brands fa-square-youtube fa-2xl"></i></li>
+                  <li><i class="fa-brands fa-square-twitter fa-2xl"></i></li>
+                  <li>
+                    <i class="fa-brands fa-square-google-plus fa-2xl"></i>
+                  </li>
+                  <li><i class="fa-brands fa-linkedin fa-2xl"></i></li>
+                  <li><i class="fa-brands fa-blogger fa-2xl"></i></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col" id="footer-col">
+              <h3 class="text-center">Contact Info</h3>
+              <div class="footer-list">
+                <ul>
+                  <li>
+                    <i
+                      class="fa-solid fa-map-location-dot fa-lg"
+                      id="brands"
+                    ></i>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Assumenda quaerat molestias sint.
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-brands fa-square-whatsapp fa-xl"
+                      id="brands"
+                    ></i>
+                    <p>
+                      Phone :
+                      <a
+                        >+62 21 445 658 <br />
+                        +62 21 524 847</a
+                      >
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                  <li>
+                    <i
+                      class="fa-solid fa-square-envelope fa-lg"
+                      id="brands"
+                    ></i>
+                    <p>
+                      Email :
+                      <a href="#" id="email">Hotelku@gmail.com</a>
+                    </p>
+                    <div class="clear"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer nav bar -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-copyright grey darken-4">
+            &copy; 2023 <a class="brand"> Hotelku. </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
