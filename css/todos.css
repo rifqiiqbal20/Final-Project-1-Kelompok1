@@ -35,6 +35,7 @@ body {
 .collapse li a:hover {
   background: rgb(135, 226, 241);
   transition: all 0.5s;
+  border-radius: 5px;
 }
 .active{
   background-color: #4fbbff;

@@ -35,3 +35,25 @@ slides[slideIndex - 1].style.display = "block";
 dot[slideIndex - 1].className += " active";
 
 }
+
+//order sweatalert
+btn =document.getElementById('iya');
+btn.addEventListener('click', function(){
+  Swal.fire({
+  title: 'Apakah anda mau memesan?',
+  text: "klik pesan untuk order!",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Pesan'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'verified!',
+      'Terimakasih sudah memesan',
+      'success'
+    )
+  }
+})
+                })
