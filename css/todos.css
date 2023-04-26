@@ -36,7 +36,10 @@ body {
   background: rgb(135, 226, 241);
   transition: all 0.5s;
 }
-
+.active{
+  background-color: #4fbbff;
+  border-radius: 5px;
+}
 button {
   height: fit-content;
   cursor: pointer;

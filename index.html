@@ -65,7 +65,6 @@
                 id="home"
                 aria-current="page"
                 href="index.html"
-                style="background: #4fbbff"
                 >HOME</a
               >
             </li>
@@ -78,20 +77,20 @@
               >
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href="">BLOG</a>
+              <a class="nav-link" aria-current="page" href="">BLOG</a>
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href=""
+              <a class="nav-link" aria-current="page" href=""
                 >ABOUT US</a
               >
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href=""
+              <a class="nav-link" aria-current="page" href=""
                 >CONTACT</a
               >
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href="Todos.html">TODOS</a>
+              <a class="nav-link" aria-current="page" href="Todos.html">TODOS</a>
             </li>
           </ul>
         </div>
@@ -104,24 +103,31 @@
     
       <div class="content-slidee">
           <div class="imgslide fadee">
-              <div class="numberslidee">1 / 3</div>
+              <div class="numberslidee">1 / 4</div>
               <img class="gambar" src="source/home slide1.jpg" alt="">
               <div class="text">KAMAR SUPERIOR</div>
           </div>
 
           <div class="imgslide fadee">
-              <div class="numberslidee">2 / 3</div>
+              <div class="numberslidee">2 / 4</div>
               <img class="gambar" src="source/home slide2.jpg" alt="">
               <div class="text">KAMAR DELUXE</div>
 
           </div>
 
           <div class="imgslide fadee">
-              <div class="numberslidee">3 / 3</div>
+              <div class="numberslidee">3 / 4</div>
               <img class="gambar" src="source/home slide3.jpg" alt="">
               <div class="text">KAMAR STANDART</div>
 
           </div>
+
+          <!-- <div class="imgslide fadee">
+            <div class="numberslidee">4 / 4</div>
+            <img class="gambar" src="source/home slide3.jpg" alt="">
+            <div class="text">KAMAR STANDART</div>
+
+        </div> -->
 
           <a class="prev" onClick="nextslide(-1)">&#10094;</a>
           <a class="next" onClick="nextslide(1)">&#10095;</a> 
@@ -145,10 +151,11 @@
             <div class="card h-100">
               <img src="source/home slide1.jpg" class="card-img-top" alt="ICON1" />
               <div class="card-body">
-                <h5 class="card-title text-info">Kamar Superior</h5>
+                <h5 class="card-title text-info">Superior</h5>
                 <p class="desc text-white">
-                  Rp. 500.000/malam
+                  Rp. 300.000
                 </p>
+                <button class="orderr">Order Now</button>
               </div>
             </div>
           </div>
@@ -156,10 +163,11 @@
             <div class="card h-100">
               <img src="source/home slide2.jpg" class="card-img-top" alt="ICON2" />
               <div class="card-body">
-                <h5 class="card-title text-info">Kamar Deluxe</h5>
+                <h5 class="card-title text-info">Deluxe</h5>
                 <p class="desc text-white">
-                  nanti diisi ya
+                  Rp. 400.000
                 </p>
+                <button class="orderr">Order Now</button>
               </div>
             </div>
           </div>
@@ -167,10 +175,11 @@
             <div class="card h-100">
               <img src="source/home slide3.jpg" class="card-img-top" alt="ICON3" />
               <div class="card-body">
-                <h5 class="card-title text-info">Kamar Standart</h5>
+                <h5 class="card-title text-info">Standart</h5>
                 <p class="desc text-white">
-                  nanti diisi ya
+                  Rp. 250.000
                 </p>
+                <button class="orderr">Order Now</button>
               </div>
             </div>
           </div>
@@ -178,10 +187,11 @@
             <div class="card h-100">
               <img src="source/home slide4.jpg" class="card-img-top" alt="ICON3" />
               <div class="card-body">
-                <h5 class="card-title text-info">Card Member</h5>
+                <h5 class="card-title text-info">Superior King</h5>
                 <p class="desc text-white">
-                  nanti diisi heys
+                  Rp. 330.000
                 </p>
+                <button class="orderr">Order Now</button>
               </div>
             </div>
           </div>
@@ -249,47 +259,8 @@
           onclick="openFullImg(this.src)"
         />
       </div>
-      <!-- <script>
-        const fullImgBox = document.getElementById("fullImgBox");
-        const fullImgBox2 = document.getElementById("fullImgBox2");
-        const fullImgBox3 = document.getElementById("fullImgBox3");
-        const fullImgBox4 = document.getElementById("fullImgBox4");
-        const fullImgBox5 = document.getElementById("fullImgBox5");
-        const fullImgBox6 = document.getElementById("fullImgBox6");
-        const fullImg = document.getElementById("fullImg");
-        const fullImg2 = document.getElementById("fullImg2");
-        const fullImg3 = document.getElementById("fullImg3");
-        const fullImg4 = document.getElementById("fullImg4");
-        const fullImg5 = document.getElementById("fullImg5");
-        const fullImg6 = document.getElementById("fullImg6");
 
-        function openFullImg(pic) {
-          fullImgBox.style.display = "flex";
-          fullImg.src = pic;
-          fullImgBox2.style.display = "flex";
-          fullImg2.src = pic;
-          fullImgBox3.style.display = "flex";
-          fullImg3.src = pic;
-          fullImgBox4.style.display = "flex";
-          fullImg4.src = pic;
-          fullImgBox5.style.display = "flex";
-          fullImg5.src = pic;
-          fullImgBox6.style.display = "flex";
-          fullImg6.src = pic;
-        }
-
-        function closeFullImg() {
-          fullImgBox.style.display = "none";
-          fullImgBox2.style.display = "none";
-          fullImgBox3.style.display = "none";
-          fullImgBox4.style.display = "none";
-          fullImgBox5.style.display = "none";
-          fullImgBox6.style.display = "none";
-        }
-      </script>
-    </div>
-
-    < clients-->
+    <!-- clients -->
     <div class="container">
       <h1 class="h1">OUR CLIENTS</h1>
       <h2 class="h2">This is our clients</h2>
