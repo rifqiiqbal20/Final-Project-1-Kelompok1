@@ -273,12 +273,14 @@ ul {
 }
 .h-100:hover{
   transform: scale(1.1);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .orderr{
   background-color: rgb(175, 32, 32);
   color: white;
   height: 30px;
+  border-radius: 5px;
+  border: none;
   width: 100px;
 }
 .orderr:hover{
