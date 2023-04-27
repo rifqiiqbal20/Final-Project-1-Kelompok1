@@ -13,6 +13,7 @@
       defer
     />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
@@ -34,7 +35,7 @@
           <img
             src="source/logo.png"
             alt="Logo Hotelku."
-            width="200"
+            width="100"
             height="50"
           />
         </a>
@@ -53,7 +54,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-text">
             <li>
               <a
-                class="nav-link active"
+                class="nav-link"
                 id="home"
                 aria-current="page"
                 href="index.html"
@@ -61,28 +62,22 @@
               >
             </li>
             <li>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="portofolio.html"
+              <a class="nav-link" aria-current="page" href="portofolio.html"
                 >PORTOFOLIO</a
               >
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href="blog.html">BLOG</a>
+              <a class="nav-link" aria-current="page" href="">BLOG</a>
             </li>
             <li>
-              <a class="nav-link active" aria-current="page" href="aboutus.html"
-                >ABOUT US</a
-              >
+              <a class="nav-link" aria-current="page" href="">ABOUT US</a>
             </li>
             <li>
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                style="background: #4fbbff"
-                >CONTACT</a
+              <a class="nav-link active" aria-current="page" href="">CONTACT</a>
+            </li>
+            <li>
+              <a class="nav-link" aria-current="page" href="Todos.html"
+                >TODOS</a
               >
             </li>
           </ul>
@@ -166,14 +161,20 @@
           ></textarea>
           <label for="floatingTextarea2">Comments</label>
         </div>
-        <button
-          type="submit"
-          class="btn btn-outline-info"
-          id="submit"
-          style="color: black"
-        >
+        <button type="submit" class="btn btn-outline-info" id="submit">
           Send A Message
         </button>
+        <script>
+          btn =document.getElementById('submit');
+          btn.addEventListener('click', function(){
+                    Swal.fire({
+                              icon: 'success',
+                              title: 'Pesan anda sudah Terkirim',
+                              showConfirmButton: false,
+                              timer: 1500
+                            })
+          })
+        </script>
       </div>
 
       <div id="contact-info">
@@ -186,9 +187,8 @@
                 id="contact-social"
               ></i>
               <p>
-                Jl. Matraman Raya No.224
-                Kel. Balimester, Kec. Jatinegara
-                Kota Jakarta Timur 13310.
+                Jl. Matraman Raya No.224 Kel. Balimester, Kec. Jatinegara Kota
+                Jakarta Timur 13310.
               </p>
               <div class="clear"></div>
             </li>
@@ -230,10 +230,13 @@
             <div class="col" id="footer-col">
               <h3 class="text-center">About</h3>
               <p>
-                Hotelku adalah Hotel yang bergabung dalam salah satu industri sektor jasa bidang kepariwisataan.
-                keberadaan hotel semakin penting untuk masyarakat, karena hotel menyediakan sarana dan pelayanan 
-                bagi para pelanggannya. Jasa- jasa yang dapat ditawarkan dalam bidang perhotelan, diantaranya fasilitas
-                penyediaan/penyewaan kamar, fasilitas penyediaan ruang konferensi dan sebagainya.
+                Hotelku adalah Hotel yang bergabung dalam salah satu industri
+                sektor jasa bidang kepariwisataan. keberadaan hotel semakin
+                penting untuk masyarakat, karena hotel menyediakan sarana dan
+                pelayanan bagi para pelanggannya. Jasa- jasa yang dapat
+                ditawarkan dalam bidang perhotelan, diantaranya fasilitas
+                penyediaan/penyewaan kamar, fasilitas penyediaan ruang
+                konferensi dan sebagainya.
               </p>
               <button type="button" class="btn btn-outline-primary">
                 Learn more
@@ -291,8 +294,9 @@
                       ;
                     ></i>
                     <p>
-                      pelanggan2, Hotel ini cukup menyenangkan dan nyaman dikunjungi bersama
-                      pasangan, saya sangat merekomendasikannya.
+                      pelanggan2, Hotel ini cukup menyenangkan dan nyaman
+                      dikunjungi bersama pasangan, saya sangat
+                      merekomendasikannya.
                     </p>
                     <div class="clear"></div>
                   </li>
@@ -310,8 +314,8 @@
                       ;
                     ></i>
                     <p>
-                      pelanggan303, makanan di Hotelku ini sangat enak.
-                      ada banyak variasinya bagi yg suka makan disini.
+                      pelanggan303, makanan di Hotelku ini sangat enak. ada
+                      banyak variasinya bagi yg suka makan disini.
                     </p>
                     <div class="clear"></div>
                   </li>
@@ -329,8 +333,9 @@
                       ;
                     ></i>
                     <p>
-                      pelanggan703, pemandangan di Hotelku ini sangat membuat pikiran menjadi tenang
-                      sangat cocok bagi yang ingin menghilangkan penat.
+                      pelanggan703, pemandangan di Hotelku ini sangat membuat
+                      pikiran menjadi tenang sangat cocok bagi yang ingin
+                      menghilangkan penat.
                     </p>
                     <div class="clear"></div>
                   </li>
@@ -348,8 +353,9 @@
                       ;
                     ></i>
                     <p>
-                      pelanggan585, pelayanan di Hotelku sangat bagus.
-                      mereka sangat ramah kepada pelanggan dan bekerja secara profesional.
+                      pelanggan585, pelayanan di Hotelku sangat bagus. mereka
+                      sangat ramah kepada pelanggan dan bekerja secara
+                      profesional.
                     </p>
                     <div class="clear"></div>
                   </li>
@@ -380,8 +386,7 @@
                       id="brands"
                     ></i>
                     <p>
-                      Jl. Matraman Raya No.224
-                      Kel. Balimester, Kec. Jatinegara
+                      Jl. Matraman Raya No.224 Kel. Balimester, Kec. Jatinegara
                       Kota Jakarta Timur 13310.
                     </p>
                     <div class="clear"></div>
@@ -427,5 +432,7 @@
         </div>
       </div>
     </div>
+    <script src="dist/sweetalert2.all.min.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

@@ -11,26 +11,37 @@ ul {
 }
 
 /* navbar */
+
 .navbar img {
     margin-left: 20px;
-}
-.navbar {
+  }
+  .navbar {
     background: #f6f6f6;
-}
-#navbar-text {
+  }
+  #navbar-text {
     margin: 5px;
     font-size: 1.1em;
-    font-family: 'Times New Roman', serif;
-}
-.collapse li {
+    font-family: "Times New Roman", serif;
+  }
+  .collapse li {
     margin-right: 20px;
-}
-
-.collapse li a:hover{
+  }
+  
+  .collapse li a:hover {
     background: rgb(135, 226, 241);
     transition: all 0.5s;
-}
-
+    border-radius: 5px;
+  }
+  .active{
+    background-color: #4fbbff;
+    border-radius: 5px;
+  }
+  button {
+    height: fit-content;
+    cursor: pointer;
+    color: #04202c;
+    background-color: #c9d1c8;
+  }
 
   /* Google Maps */
   iframe {
@@ -84,7 +95,14 @@ ul {
     color: rgb(5, 142, 255);
     text-decoration: underline;  
 } 
-
+.btn-outline-info{
+  color: rgb(255, 255, 255);
+  background-color: #0077b5;
+}
+.btn-outline-info:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
   /* navbar footer */
 .footer-top {
     background: black;
