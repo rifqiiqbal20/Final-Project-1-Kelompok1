@@ -236,3 +236,11 @@ img {
 .footer-bottom .brand:hover {
     color: white;
 }
+@media (max-width: 770px) {
+  .footer-list{
+  display: none;
+}
+.text-center2{
+  display: none;
+}
+}
