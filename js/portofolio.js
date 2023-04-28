@@ -94,6 +94,7 @@ const email2 = document.getElementById('email2')
 
 
 const buttonSubmit2 = document.getElementById('my-button2')
+const resume2 = document.getElementById('resume2')
 const myBox2 = document.getElementById('my-box2')
 
 let isLowerBracketShow2 = true
@@ -132,6 +133,10 @@ function toggleBox2 () {
 }
 
 buttonSubmit2.addEventListener('click', (event) => {
+  event.preventDefault()
+  toggleBox2()
+})
+resume2.addEventListener('click', (event) => {
   event.preventDefault()
   toggleBox2()
 })
