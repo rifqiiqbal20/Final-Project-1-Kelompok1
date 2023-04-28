@@ -87,6 +87,8 @@ button {
     align-content: center;
     align-items: center;
     width: 90%;
+    border-radius: 20px;
+    box-shadow: 10px 3px 10px 10px rgb(41, 8, 141), -10px 0 10px rgb(64, 5, 240);
   }
   .foto img {
     margin-left: 50px;
