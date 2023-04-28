@@ -922,3 +922,12 @@ h5.leave {
   float: left;
   padding: 0;
 }
+@media (max-width: 770px) {
+  .footer-list{
+  display: none;
+}
+.text-center2{
+  display: none;
+}
+}
+
